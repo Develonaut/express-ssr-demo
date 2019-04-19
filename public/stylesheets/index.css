@@ -1,0 +1,378 @@
+@import url("https://use.typekit.net/mll2pqj.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box;
+  user-select: none; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "houschka-rounded", sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+html,
+body {
+  width: 100%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+.adx-unit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto 20px auto; }
+
+.loading {
+  position: absolute;
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+  pointer-events: none; }
+  .loading .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .loading .modal {
+    position: fixed;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    height: 100px;
+    z-index: 999999;
+    background: white;
+    padding: 35px 30px;
+    border-radius: 12px;
+    font-weight: bold; }
+
+.nav {
+  z-index: 900;
+  position: relative;
+  padding: 0 20px; }
+  .nav__content {
+    margin: 0 auto;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    max-width: 1032px;
+    height: 50px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    z-index: 900;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: box-shadow .1s ease-in;
+    overflow: hidden; }
+  .nav .logo {
+    font-family: "houschka-rounded", sans-serif;
+    width: 202.2px;
+    height: 49px;
+    object-fit: contain;
+    border-radius: 25px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.84); }
+    .nav .logo__text {
+      font-size: 20px; }
+      .nav .logo__text--bold {
+        font-size: 22px;
+        font-weight: bold; }
+
+.footer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-family: "houschka-rounded", sans-serif; }
+  @media (min-width: 870px) {
+    .footer {
+      flex-direction: row;
+      max-width: 870px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 20px; } }
+  .footer__items {
+    margin: 0 auto;
+    padding: 30px 20px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footer__items__item,
+    .footer__items__item a {
+      padding: 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.21;
+      width: 100%;
+      text-align: center;
+      display: block;
+      color: #2b0941; }
+    .footer__items__item {
+      margin-bottom: 17px; }
+      .footer__items__item:last-of-type {
+        margin-bottom: 0; }
+
+.horoscopes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 10px;
+  overflow: hidden; }
+  .horoscopes__buttons {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 870px; }
+    .horoscopes__buttons__button {
+      margin: 0 10px 16px 0;
+      width: 100%;
+      padding: 0 10px;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      align-content: stretch;
+      cursor: pointer;
+      height: 50px;
+      color: #2b0941;
+      text-shadow: none;
+      font-weight: 600;
+      background: transparent;
+      transition: background-color .1s ease-in;
+      border-radius: 100px;
+      border: 4px solid #2b0941;
+      text-decoration: none; }
+      @media (min-width: 870px) {
+        .horoscopes__buttons__button {
+          width: calc(33.3% - 10px); } }
+      @media (min-width: 530px) {
+        .horoscopes__buttons__button {
+          width: calc(50% - 10px); } }
+      .horoscopes__buttons__button:hover {
+        color: #f4ede1;
+        background-color: #2b0941;
+        text-decoration: none; }
+        .horoscopes__buttons__button:hover svg {
+          fill: #f4ede1; }
+      .horoscopes__buttons__button svg, .horoscopes__buttons__button__text {
+        pointer-events: none; }
+      .horoscopes__buttons__button svg {
+        position: relative;
+        fill: #2b0941;
+        width: 40px;
+        height: 30px;
+        border-right: none;
+        margin-right: 10px; }
+      .horoscopes__buttons__button__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        line-height: 0; }
+      .horoscopes__buttons__button__text__name {
+        margin-right: 10px;
+        font-size: 20px;
+        font-weight: 700; }
+      .horoscopes__buttons__button__text__date {
+        font-size: 12px;
+        font-weight: 500;
+        position: relative;
+        bottom: -1px; }
+
+.about {
+  z-index: 1;
+  width: 100%;
+  background-color: #e4fbf5;
+  padding: 60px 20px;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start; }
+  @media (max-width: 520px) {
+    .about {
+      flex-direction: column; } }
+  .about__section {
+    max-width: 280px; }
+    .about__section:first-of-type {
+      margin-bottom: 35px; }
+      .about__section:first-of-type__header, .about__section:first-of-type__body {
+        text-align: right;
+        position: relative; }
+    .about__section__header, .about__section__body {
+      max-width: 280px;
+      position: relative; }
+    .about__section__header {
+      text-align: left;
+      line-height: 1.21;
+      font-size: 33px;
+      font-weight: bold;
+      color: #2b0941;
+      margin-bottom: 25px; }
+    .about__section__body {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.19;
+      letter-spacing: 0.2px;
+      color: #2b0941;
+      margin: 0;
+      z-index: 5; }
+
+/*# sourceMappingURL=index.css.map */

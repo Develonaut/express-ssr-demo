@@ -1,0 +1,29 @@
+@import "_main.scss";
+
+
+.view--thankyou {
+  background: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  text-align: center;
+
+  h1 {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    color: #454545;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+
+  .offer {
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+  }
+}

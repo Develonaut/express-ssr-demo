@@ -1,0 +1,47 @@
+.nav {
+  z-index: 900;
+  position: relative;
+  padding: 0 20px;
+
+  &__content {
+    margin: 0 auto;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    max-width: 1032px;
+    height: 50px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    z-index: 900;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: box-shadow .1s ease-in;
+    overflow: hidden;
+  }
+
+  .logo {
+    font-family: "houschka-rounded", sans-serif;
+    width: 202.2px;
+    height: 49px;
+    object-fit: contain;
+    border-radius: 25px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    color: rgba(0, 0, 0, .84);
+
+    &__text {
+      font-size: 20px;
+
+      &--bold {
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+  }
+}
