@@ -3,6 +3,11 @@ import path from "path";
 import PATHS from "./paths";
 import createError from "http-errors";
 
+/**
+ *
+ * All possible routes in the server, with a defined
+ * url, and the respective router to handle logic.
+ */
 export const ROUTES = {
   INDEX: { URL: "/", ROUTER: require(path.join(PATHS.ROUTES, "index")) },
   THANK_YOU: {
@@ -27,6 +32,13 @@ export const ROUTES = {
   }
 };
 
+/**
+ *
+ * Using the initialized Server, define available routes,
+ * expose our public directory, and setup default error
+ * handling if an undefined route is used.
+ * @param {object} server
+ */
 export default server => {
   // Allow Access to the "Public" directory.
   server.use(express.static(PATHS.PUBLIC));

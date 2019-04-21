@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "npm run nodemon && npm run lint",
+    "start": "NODE_ENV=development npm run nodemon && npm run lint",
+    "serve": "NODE_ENV=production pm2 start ./bin/www",
+    "stop": "NODE_ENV=production && npm run pm2:stop:all",
+    "restart": "NODE_ENV=production && npm run pm2:restart:all",
+    "pm2:restart:all": "pm2 restart all -f",
+    "pm2:stop:all": "pm2 stop all -f",
     "lint": "eslint ./ --fix",
-    "nodemon": "nodemon --exec babel-node ./bin/www --watch",
-    "serve": "pm2 ./bin/www"
+    "nodemon": "nodemon --exec babel-node ./bin/www --watch"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
